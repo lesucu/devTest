@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('joinForm', { title: '회원가입폼~' });
+  res.render('joinForm', { title: '회원가입폼' });
 });
 
 router.post('/',function(req,res,next){
