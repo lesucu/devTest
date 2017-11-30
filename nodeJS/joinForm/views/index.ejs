@@ -1,11 +1,114 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <% include ./common_head %>
+    <% include ./index_hidden %>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           var btnLen = $('.btn').children().length; 
+           $('.btn').css('width',((btnLen * 29) + 'px'));
+           $('.container2').find('.cont2b').eq(1).hide();
+           $('.container2').find('.cont2b').eq(2).hide();
+        });
+    </script>
+    <body>
+        <% include ./index_head %>
+        <!-- header 종료 -->
+        <div class="slider">
+            <ul class="slide">
+                <li><img src="img/main_slide1.png"></li>
+                <li><img src="img/main_slide2.png"></li>
+            </ul>
+            <ul class="btn">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <ul class="contain1">
+                    <h1>테마별 검색</h1>
+                    <% for(var i = 0; i < 6; i++){ %>
+                    <a href="#"><li><img src="img/contain1.jpg">
+                    <div class="cove1">#공방</div>
+                    </li></a>
+                    <% } %>
+                </ul>
+                <ul class="contain2">
+                    <h1>모꼬지 PICK</h1>
+                    <% for(var i = 0; i < 8; i++){ %>
+                    <a href="#"><li>
+                        <div class="cont2t">
+                            <img src="img/contain2.jpg">
+                            <div class="cove2">베이킹 스튜디오 메닐몽땅</div>
+                        </div>
+                        <div class="saram">
+                            <img src="img/contain2_1_2.png">
+                        </div>
+                        <div class="con2b">
+                            <div class="name">오연주</div>
+                            <p>서울 송파구 잠실동</p>
+                            <span>협의 월1회</span>
+                        </div>
+                    </li></a>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="wrapper">
+                <h1>모꼬지 MAGAZINE</h1>
+                <% for(var i = 0; i < 3; i++) { %>
+                <ul class="cont2b">
+                    <% for(var a = 0; a < 9; a++){ %>
+                    <a href="#"><li>
+                        <img src="img/container2_1.jpg">
+                        <div class="cove3">
+                            <p>[가볼까]플라워 앙금 떡 케이크 클래스 <br>
+                            by.멍구</p>
+                        </div>
+                    </li></a>
+                    <% } %>
+                </ul>
+                <% } %>
+                <div class="cut"></div>
+                <button id="btn">더 불러오기</button>
+                <script type="text/javascript">
+                    var bsw = 1;
+                    var btnLen = $('.container2').find('.cont2b').length;
+                    $('#btn').click(function(){
+                        $('.container2').find('.cont2b').eq(bsw).show();
+                        bsw++;
+                        if(bsw == btnLen){
+                            $('#btn').hide();
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+        <% include ./index_tail %>
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

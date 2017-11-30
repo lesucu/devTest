@@ -1,0 +1,15 @@
+header {width: 100%; background: #2a2c2e; height: 60px; border-bottom: 1px solid #444;}
+header > .head_box1 { width: 700px; height: 60px; float: left;}
+header > .head_box1 > a { display: block; width: 160px; height: 60px; float: left;
+margin: 0 20px;}
+header > .head_box1 > a > img {width: 100%; height: 60px;}
+header > .head_box1 > .input_box {width: 378px;height: 38px; border: 1px solid #fff;
+float: left; margin-top: 10px;}
+header > .head_box1 > .input_box > input {height: 38px; width: 320px; border: 0; padding: 0 10px; float: left; background: #2a2c2e; color: #fff;}
+header > .head_box1 > .input_box > input::-webkit-input-placeholder { color: #fff; }
+header > .head_box1 > .input_box > button {border: 0;width:38px; height: 38px; cursor: pointer; float: right;background:#2a2c2e; }
+header > .head_box1 > .input_box > button > img { width: 30px; height: 30px;}
+header > .head_box2 {width: 200px; float: right; margin: 10px 20px;}
+header > .head_box2 > button {border: 0; padding: 10px 20px; cursor: pointer;
+background: #2a2c2e; font-weight: bold; color: #fff;}
+header > .head_box2 > button:hover {color: #50a5bc;}

@@ -1,0 +1,127 @@
+/*menu_bar*/
+.menu_bar {width: 100%; background: #eee; height: 40px;}
+.menu_bar > ul {width: 1200px; height: 40px; margin: 0 auto; }
+.menu_bar > ul > li {display: block; float: left; }
+.menu_bar > ul > li > a{line-height: 40px; width: 109px; display: block;
+color: #666; font-size: 13px; font-weight: bold; text-align: center; }
+.menu_bar > ul > li > a:hover {color: #50a5bc;}
+@media all and (max-width:1200px){
+    .menu_bar > ul {width: 100%;}
+    .menu_bar > ul > li {width: 9%;}
+    .menu_bar > ul > li > a {width: 100%; font-size: 11px; }
+}
+/*slider*/
+.slider {width: 100%; position: relative;}
+.slider > .slide {}
+.slider > .slide > li {display: none; }
+.slider > .slide > li > img {width: 100%;}
+.btn { position: relative; margin: -35px auto; z-index: 999;}
+.btn > li {width: 15px; height: 15px; border-radius: 50%; margin: 0 5px; border: 2px solid #fff; float: left; cursor: pointer;}
+.container {margin-top: 40px;}
+.container > .wrapper > .contain1 {text-align: center; height: 630px;}
+.container > .wrapper > .contain1 > h1 {font-size: 24px; padding-top: 50px; padding-bottom: 30px; }
+.container > .wrapper > .contain1 > a > li {height: 200px; width: 31%; float: left;
+box-shadow: 2px 1px 3px; margin: 10px; overflow: hidden; position: relative;}
+.container > .wrapper > .contain1 > a > li > img {width: 100%; height: 100%;}
+.container > .wrapper > .contain1 > a > li > .cove1 {width: 100%; height: 200px;
+position: absolute; top: 0; background: rgba(0,0,0,0.4); line-height: 200px;
+color: #fff; font-size: 22px; font-weight: bold;}
+.container > .wrapper > .contain1 > a:hover img {transform: scale(1.1);}
+.container > .wrapper > .contain2 {text-align: center; height: 100%;}
+.container > .wrapper > .contain2 > h1 {font-size: 24px; padding-bottom: 30px;}
+.container > .wrapper > .contain2 > a > li {width: 22.5%; height: 390px;
+box-shadow: 2px 1px 3px; margin: 15px; float: left; position: relative;}
+.container > .wrapper > .contain2 > a > li > .cont2t {width: 100%; height: 245px;
+position: relative; }
+.container > .wrapper > .contain2 > a > li > .cont2t > img {width: 100%; height: 100%;}
+.container > .wrapper > .contain2 > a > li > .cont2t > .cove2 {width: 100%; height: 245px; position: absolute; top: 0; background: rgba(0,0,0,0.3); line-height: 245px;
+color: #fff; font-size: 21px; font-weight: bold;}
+.container > .wrapper > .contain2 > a > li > .saram {width: 70px; height: 70px;
+ margin: 0 auto; border:2px solid #fff; border-radius: 50%; position: absolute;
+left: 50%; transform: translateX(-50%); top: 206px;}
+.container > .wrapper > .contain2 > a > li > .saram > img {width: 100%;border-radius: 50%;}
+.container > .wrapper > .contain2 > a > li > .con2b { height: 145px;
+font-size: 14px; font-weight: bold; color: #555; background: #fff;}
+.container > .wrapper > .contain2 > a > li > .con2b > .name {padding-top: 40px;}
+.container > .wrapper > .contain2 > a > li > .con2b > p {margin: 10px 0;font-size: 16px;
+font-weight: 500;}
+.container > .wrapper > .contain2 > a > li > .con2b > span {font-size: 16px; color: #00b7ee;}
+@media all and (min-width:990px) and (max-width:1200px){
+    .container > .wrapper > .contain2 > a > li {width: 30.6%;}
+}
+@media all and (max-width:1114px){
+    .container > .wrapper > .contain2 > a > li {width: 46%;}
+}
+.container2 {text-align: center; clear: both; }
+.container2 > .wrapper > h1 {padding-top: 40px; font-size: 28px; color: #555;
+padding-bottom: 30px;}
+.container2 > .wrapper > .cont2b > a > li {height: 360px; width: 31.6%; 
+float: left; margin: 10px; position: relative; overflow: hidden;}
+.container2 > .wrapper > .cont2b > a > li > img {width: 100%; height: 100%;
+transition: all .2s linear; }
+.container2 > .wrapper > .cont2b > a > li > .cove3 {position: absolute; top: 0;
+background: rgba(0,0,0,0.3); color: #fff; width: 100%; height: 360px;
+font-size: 20px; font-weight: bold; }
+.container2 > .wrapper > .cont2b > a > li > .cove3 > p {margin-top: 160px;}
+.container2 > .wrapper > .cont2b > a:hover img {transform: scale(1.1);}
+@media all and (max-width:1000px){
+    .container2 > .wrapper > .cont2b > a > li {width: 47.8%;}
+}
+.container2 > .wrapper > .cut {width: 100%; height: 30px; clear: both;}
+.container2 > .wrapper > #btn {clear: both; border: 0;text-align: center;width: 396px;height: 43px; background: #fff; border: 1px solid #eee;}
+.container2 > .wrapper > #btn { text-align: center;width: 396px;height: 43px; background: #fff; border: 1px solid #ccc; font-size: 14px; color: #555;display: block; margin: 0px auto; cursor: pointer; margin-bottom: 100px; }
+
+.hiden {position: fixed; width: 100%; background:rgba(0,0,0,0.3); height: 100%; 
+z-index: 9999; display: none; }
+.hiden > .join {width: 390px; height: 440px; margin: 220px auto; background: #fff;
+border-radius: 1%; position: relative;}
+.hiden > .join > .joinbox {width: 330px; margin: 0 auto;}
+.hiden > .join > .joinbox > .hidencut {height: 2px; clear: both;}
+.hiden > .join > .joinbox > .facestart {border: 0; display: block; width: 100%;
+margin-top: 30px; height: 50px; background: #3b5998; color: #fff; font-size: 15px;
+font-weight: bold; cursor: pointer;}
+.hiden > .join > .joinbox > .facestart > img {width: 19px; height: 19px; float: left;
+margin-left: 30px}
+.hiden > .join > .joinbox > p {text-align: center; color: #888; font-size: 14px;
+margin-top: 10px; margin-bottom: 15px;}
+.hiden > .join > .joinbox > .loging {width: 93%; padding: 18px 10px; margin: 5px 0;
+border: 2px solid #eee;}
+.hiden > .join > .joinbox > label > .checkb {width: 20px; height: 40px; float: left;}
+.hiden > .join > .joinbox > label > span {font-size: 14px; display: block; width: 110px; margin-top: 10px; margin-left: 30px; color: #888; }
+.hiden > .join > .joinbox > a {display: block; font-size: 14px; width: 152px; 
+    float: right; margin-top: -17px; color: #00beff;}
+.hiden > .join > .joinbox > .joinbtn {border: 0; display: block; width: 100%;
+height: 50px; background:#00beff; color: #fff; font-weight: bold; font-size: 14px;
+cursor: pointer; margin-top: 20px;}
+.hiden > .join > .joinbox > .joinfoot {margin-top: 20px; border-top: 2px solid #eee;}
+.hiden > .join > .joinbox > .joinfoot > p {font-size: 14px; color: #888; margin-top: 15px; display: inline-block;}
+.hiden > .join > .joinbox > .joinfoot > .emailjoin { float: right; display: block;
+border: 0; width: 112px; height: 32px; background: #fff; border: 1px solid #00beff;
+border-radius: 5px; margin-top: 10px; color: #00beff; font-size: 12px; font-weight: bold; cursor: pointer;}
+.hiden > .join > .outbox {position: absolute;width: 45px; height: 45px;
+background: #00beff; border-radius: 50%; cursor: pointer; top: -18px; right: -18px;
+line-height: 45px; text-align: center; color: #fff; font-weight: bold; font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
