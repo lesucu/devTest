@@ -1,0 +1,155 @@
+<html>
+    <head>
+    <% include ./common/common_head %>
+    <% include ./common/hidden %> 
+    </head>
+    <body style="background:#fff;">
+        <% include ./common/header %>
+        <div class="creatBar">
+           <% for(var i = 0; i < bar.length; i++){ %>
+            <ul>
+                <span><%= bar[i] %></span>
+                <li></li>
+            </ul>
+            <% } %>
+        </div>
+        <script type="text/javascript">
+            var barN = $('.creatBar').children('ul');
+            barN.children('li').hover(function(){
+                $(this).siblings().show();
+            },function(){
+                $(this).siblings().hide();
+            });
+        </script>
+        <div class="step1 creatCom">
+            <div class="step1L stepL"></div>
+            <h1>
+            모꼬지에 새로운 클래스를 등록해주세요!<br>
+            <span>모꼬지 등록은 최대4개까지 가능하며 회원님의 모꼬지는 0개입니다</span>
+            </h1>
+            <button id="step1Btn">시작하기</button>
+        </div>
+        <div class="step2 creatCom">
+            <div class="step2L stepL"></div>
+            <h1 class="h1">모꼬지 기본정보를 입력해주세요</h1>
+            <p>대표할 최대 3개의 카테고리는 무엇인가요?</p>
+            <div class="creatKate">
+                <div class="kate">라이프스타일</div>
+                <div class="kate">영어</div>
+                <div class="kate">외국어</div>
+                <div class="kate">컴퓨터</div>
+                <div class="kate">디자인/미술</div>
+                <div class="kate">국가고시/공무원</div>
+                <div class="kate">취업</div>
+                <div class="kate">음악/공연</div>
+                <div class="kate">스포츠</div>
+                <div class="kate">뷰티/미용</div>
+                <div class="kate">게임</div>
+            </div>
+            <div class="kateMenu">
+                <ul>
+                    <li>#육아</li>
+                    <li>#사주/타로</li>
+                    <li>#독서/글쓰기</li>
+                    <li>#인테리어</li>
+                    <li>#바리스타/바텐더</li>
+                    <li>#반려동물</li>
+                    <li>#건강/웰빙</li>
+                </ul>
+                <ul>
+                    <li>#토익</li>
+                    <li>#토플</li>
+                    <li>#텝스</li>
+                    <li>#토스/오픽</li>
+                    <li>#영어회화</li>
+                    <li>#작문/독해</li>
+                    <li>#미드정복</li>
+                    <li>#영어 기타</li>
+                </ul>
+                <% for(var i = 0; i < 9; i++){ %>
+                <ul>
+                    <li>#중국어</li>
+                    <li>#일본어</li>
+                    <li>#독일어</li>
+                    <li>#아랍어</li>
+                    <li>#프랑스어</li>
+                    <li>#태국어</li>
+                </ul>
+                <% } %>
+            </div>
+            <div class="creatPay">
+                <h1>비용과 횟수를 알려주세요</h1>
+                <p>비용<span>0~100만원(0원 입력 시 협의)</span></p>
+                <div class="pay"> 
+                    <div class="py1">월</div>
+                    <div class="py2">원</div>
+                    <input type="text" id="payPut1"/>
+                </div>
+                <p>횟수<span>1~31회 사이로 입력할 수 있습니다.</span></p>
+                <div class="pay"> 
+                    <div class="py1">월</div>
+                    <div class="py2">회</div>
+                    <input type="text"  id="payPut2"/>
+                </div>
+            </div>
+            <div class="creatSc">
+                <button class="rolTop">▲</button>
+                <button class="rolBottom">▽</button>
+            </div>
+            <script type="text/javascript">
+                var kMenu = $('.kateMenu').children('ul');
+                var kate = $('.creatKate').children('.kate');
+                var sw = null;
+                $('#payPut1').val(0);
+                $('#payPut2').val(1);
+                $('.creatKate').children('div').click(function(){
+                    var knum = $(this).index();
+                    if(sw === knum){
+                        kMenu.eq(knum).slideUp('fast');
+                        kate.eq(knum).css('background','#fff');
+                    }else{
+                        kMenu.eq(knum).slideDown('fast');
+                        kate.eq(knum).css('background','#f9f9f9');
+                    }
+                    sw = sw === knum ? 1000 : knum;
+                    kate.eq(knum).siblings().css('background','#fff');
+                    kMenu.eq(knum).siblings().hide();
+                });
+            </script>
+        </div>
+        <div class="step3 creatCom">
+            <div class="step3L stepL"></div>
+            <h1 class="h1">모꼬지 기본정보를 입력해주세요</h1>
+            <p>모꼬지의 목표가 무엇인가요?</p>
+            <div class="step3Box">
+                <select name="plan" class="step3Sel">
+                    <option value="">선택없음</option>
+                    <option value="" selected="selected">자기개발</option>
+                    <option value="">업무스킬</option>
+                    <option value="">자격증준비</option>
+                    <option value="">취미생활</option>
+                    <option value="">건강/다이어트</option>
+                    <option value="">친목/여가</option>
+                    <option value="">기타</option>
+                </select>
+            </div>
+            <p>모꼬지의 대상을 3개 이하로 선택해주세요.</p>
+            <ul class="step3List">
+                <li>초등학생</li>
+                <li>중학생</li>
+                <li>고등학생</li>
+                <li>입시생</li>
+                <li>대학생</li>
+                <li>일반인</li>
+                <li>직장인</li>
+            </ul>
+            <p>본격적인 모꼬지 전에 오리엔테이션이 필요한가요?</p>
+            <button id="step3Y">예</button>
+            <button id="step3N">아니요</button>
+            <div class="creatSc">
+                <button class="rolTop">▲</button>
+                <button class="rolBottom">▽</button>
+            </div>
+        </div>
+    </body>   
+</html>

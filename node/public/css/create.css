@@ -1,0 +1,82 @@
+/*common css*/
+.creatCom {height: 874px; width: 100%; position: relative; text-align: center;}
+.stepL {border-top: 1px solid #40b4e5; width: 80px;
+position: absolute; left: 50%; transform: translateX(-50%);}
+.step2,.step3 {display: none;}
+.h1 {padding-top: 20px; font-size: 27px; font-weight: 400;
+ color: #666;}
+.creatSc {width: 550px; margin: 0 auto; text-align: right;}
+.creatSc > button {width: 88px; height: 50px; background: 0; cursor: pointer;
+border-radius: 4px; font-size: 20px; vertical-align: top;}
+.creatSc > .rolTop {border: 1px solid #40b4e5; color: #40b4e5;}
+.creatSc > .rolBottom {background: #40b4e5; border: 1px solid #40b4e5;
+color: #fff; }
+
+/*creatBar*/
+.creatBar {position: fixed; right: 30px; top: 260px; z-index: 9999;}
+.creatBar > ul { clear: both; float: right;}
+.creatBar > ul > span {float: left; font-size: 12px; line-height: 17px;
+height: 17px; margin: 9px 18px; width: 50px; display: none; text-align: right;}
+.creatBar > ul > li {width: 12px; height: 12px; border: 2px solid #e0e0e0;
+border-radius: 30px; float: left; margin: 9px 0; cursor: pointer;}
+
+/*step1*/
+.step1 > .step1L { top: 180px; }
+.step1 > h1 {font-size: 25px; padding-top: 200px; font-weight: 400;}
+.step1 > h1 > span {font-size: 14px; color: #666; margin-top: 10px; display: block; margin-top: 15px;}
+.step1 > #step1Btn {margin-top: 30px; width: 450px; height: 100px;
+border: 1px solid #ccc; background: 0; font-size:16px; 
+color: #666; cursor: pointer;}
+
+/*step2*/
+.step2 > .step2L { top: 10px;}
+.step2 > h1 {}
+.step2 > p { margin-top: 35px; font-size: 18px; font-weight: 200;
+color: #666; padding-bottom: 20px;}
+.creatKate {width: 552px; margin: 0 auto; height: 178px;}
+.creatKate > div {width: 180px; height: 40px; border: 1px solid #ccc; line-height: 40px; font-size: 14px; color: #666; cursor: pointer; float: left;
+margin: 1px;}
+.kateMenu {width: 552px; margin: 0 auto; background: #f9f9f9;}
+.kateMenu > ul {display: none;}
+.kateMenu > ul > li { display: inline-block; background: #fff;
+padding: 5px 20px; margin: 5px; cursor: pointer; font-size: 14px;
+color: #666; border: 1px solid #ccc;}
+.creatPay {width: 260px; text-align: center; margin: 60px auto; }
+.creatPay > h1 { font-size: 20px; font-weight: 300; margin-bottom: 15px;
+color: #555;}
+.creatPay > p {font-size: 20px; font-weight: 300; color: #555; text-align: left;}
+.creatPay > p > span {font-size: 13px; color: #555; margin-left: 13px;}
+.creatPay {}
+.creatPay > .pay {position: relative;}
+.creatPay > .pay > input {width: 260px; height: 46px; margin: 10px auto;
+border-radius: 4px; border: 1px solid #ccc; padding: 0px 60px;
+font-size: 15px; color: #555; text-align: right;}
+.creatPay > .pay > .py1,.py2 {position: absolute; color: #555; top: 21px; }
+.creatPay > .pay > .py1 { left: 35px;}
+.creatPay > .pay > .py2 { right: 35px;}
+
+/*step3*/
+.step3 > .step3L { top: 20px;}
+.step3 > h1 {padding-top: 40px;}
+.step3 > p {font-weight: 400; margin-top: 50px; font-size: 18px; color: #555;
+margin-bottom: 15px; clear: both;}
+.step3Box {width: 550px; margin: 0 auto;}
+.step3Box > select {width: 100%; height: 50px; border-radius: 5px;
+border: 1px solid #40b4e5; font-size: 16px; color: #555; cursor: pointer;}
+.step3 > ul {width: 550px; margin: 0 auto; height: 96px;}
+.step3 > ul > li {width: 23.9%; margin: 2px; border: 1px solid #ccc;
+height: 46px; float: left; line-height: 46px; color: #555; cursor: pointer;
+transition: all .3s linear;}
+.step3 > ul > li:hover {box-shadow: 2px 4px 3px #666;}
+.step3 > button {width: 271px; height: 46px; transition: all .3s linear;
+cursor: pointer; margin-bottom: 60px;}
+.step3 > #step3Y {background: 0; border: 1px solid #ccc;}
+.step3 > #step3N {border: 1px solid #40b4e5; background: #40b4e5; color: #fff; }
+.step3 > button:hover {box-shadow: 2px 4px 3px #666;}
+
+
+
+
+
+
+

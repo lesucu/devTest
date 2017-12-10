@@ -1,0 +1,268 @@
+.detailContainer{
+    width:100%;
+    
+}
+.detailContainer > .titleImg{
+    height: 550px;            
+    background-image:url("../img/detail1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.detailContainer > .titleImg >.title{
+    /* width:100%; */
+    height: 100%;
+    display: grid;
+    padding: 0 300px;
+    grid-template-rows:5% 50% 5% 20% 20%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.detailContainer > .titleImg > .title > .buttonContainer{
+    grid-row:1;
+    text-align: right;
+}
+
+.detailContainer > .titleImg > .title > .buttonContainer > .buttonImg{
+    padding-top:10px;
+    width:23px;
+}
+
+.detailContainer > .titleImg > .title > .categoryContainer{
+    grid-row:3;
+}
+
+.detailContainer > .titleImg > .title > .categoryContainer > .category{
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 4px;
+    color:#fff;
+    font-weight:bold
+}
+
+.detailContainer > .titleImg > .title > .mainTitleContainer{
+    grid-row:4;
+    padding-top:10px;
+    color:#fff;
+    font-size:40px;
+    font-weight: bold; 
+}
+
+.detailContainer > .titleImg > .title > .creatorContainer{
+    grid-row:5;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    color:#fff
+}
+
+.detailContainer > .titleImg > .title > .creatorContainer > .creator{
+    display:flex;
+}
+
+.detailContainer > .titleImg > .title > .creatorContainer > .creator >.creatorImg{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:2px solid #fff
+}
+
+.detailContainer > .titleImg > .title > .creatorContainer > .creator > .creatorInfo{
+    margin-left: 20px
+}
+
+.detailContainer > .titleImg > .title > .creatorContainer > .creator > .creatorInfo > .creatorName{
+    font-size:20px
+}
+
+.detailContainer > .titleImg > .title > .creatorContainer > .creator > .creatorInfo > .createDate{
+    margin-top:5px;
+    opacity: 0.8;
+}
+
+.detailContainer > .titleImg > .title > .creatorContainer > .join > #btn{
+    width: 170px;
+    border: 2px solid #00b7ee;
+    background-color: #00b7ee;
+    color: #fff;
+
+    padding: 13px;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.detailContainer > .contents{
+    padding-left:20%;
+    padding-right:20%;
+    padding-top:40px;
+    padding-bottom:40px;
+    
+
+    background-color:white
+
+}
+
+.detailContainer > .contents .title {
+    color:#00b7ee;
+    padding:40px 20px 40px 0;
+}
+
+.detailContainer > .contents .label {
+    width:220px;
+    padding:10px 20px 10px 0;
+    color:#959595;
+}
+.detailContainer > .contents .info {
+    padding:10px 20px 10px 0;
+}
+
+.detailContainer > .contents .applicantContainer{
+    display: flex;
+
+}
+
+.detailContainer > .contents .applicantImg {
+    margin-right:10px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border:2px solid #fff;        
+}
+
+.detailContainer > .contents .Introduce{
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: inherit;
+    color: #666;
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.detailContainer > .contents .ableTime{
+    display:grid;
+    text-align: center;
+    grid-template-columns: repeat(7, 14.28%);
+    grid-template-rows: 50px 50px;
+    border: 1px solid #ececec;
+    color: #666;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.detailContainer > .contents .ableTimeTableHeader{
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    height:50px;
+    line-height:50px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #f9f9f9;
+
+}
+
+.detailContainer > .contents .ableTimeTableInfo{
+    border-right: 1px solid #ececec;
+    line-height:50px;
+}
+
+.detailContainer > .contents .galleryContainer{
+    display:flex;
+    flex-flow:wrap;
+    
+}
+
+.detailContainer > .contents a{
+    width:24%;
+    margin-left:1%;
+    margin-bottom:20px;
+    
+    overflow: hidden; 
+    position: relative;
+}
+
+.detailContainer > .contents a img{
+    width:100%;
+} 
+
+.detailContainer > .contents a:hover img{
+    transform: scale(1.1);
+}
+
+.detailContainer > .contents a .galleryHover{
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.15s ease 0s;
+    
+}
+
+.detailContainer > .contents a:hover .galleryHover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.detailContainer > .contents a .galleryHoverImg{
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    width:20px;
+    height:20px;
+    top: 50%;
+}
+
+.detailContainer > .contents a:hover .galleryHoverImg{
+    opacity: 1
+}
+
+
+
+.detailContainer > .comments{
+    background-color: #f8f9fb;
+    padding-left:20%;
+    padding-right:20%;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
+.detailContainer > .comments .title {
+    color:#00b7ee;
+    padding:40px 20px 40px 0;
+}
+
+.detailContainer > .comments .commentContainer{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    border: 1px solid #e8e8e8;
+    position:relative
+}
+
+.detailContainer > .comments >.commentContainer > .commentInput{
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    width:100%;
+}
+
+.detailContainer > .comments >.commentContainer > .commentButton{
+    position:absolute;
+    right:0;
+    color: #00b7ee;
+    border: 1px solid #00b7ee;
+    background-color: #fff;
+}

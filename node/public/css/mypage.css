@@ -1,0 +1,27 @@
+.mypage-top {width: 100%;}
+.mypage-container {max-width: 940px; margin: 0 auto; overflow: hidden;}
+.mypage-title {padding: 20px 0; color: black; font-size: 20px; }
+.mypage-menu {float: left; width:47%; padding: 20px 12px; background-color: #DCDCDC; font-size: 16px; border: 1px solid;}
+.mypage-menu > a {color: #fff;}
+.mypage-menu.on {background-color: #4169E1;}
+
+.mypage-main {width: 100%; }
+.mypage-contents {max-width: 940px; margin: 0 auto; padding-top: 25px;}
+.mypage-tab {background-color:#fff; color:#525252; text-align:center; font-size:16px; font-weight:400; display:table; width:100%;}
+.mypage-tab-item {padding:14px; cursor:pointer; display:table-cell; vertical-align:middle; width:25%; font-weight:300; color:#909090; background-color: #f5f5f5; border: 1px solid #dedede;}
+.mypage-contents-wrap {padding-top: 25px;}
+.mypage-tab-title {color:black; font-size:20px; margin:20px 0; }
+.mypage-contents-body {border: 1px solid #fff; overflow: hidden;}
+.mypage-profileImage {float: left; width: 100px;}
+.mypage-profileExplain {margin: 0 auto; width: 600px;}
+.profileFileUpload {position: relative; width: 100px; height: 23px; overflow: hidden;}
+.file_input_button { width: 100px; position: absolute; top: 0px; background-color: #33BB00; color: #FFFFFF; border-style: solid; }
+.file_input_hidden { font-size: 45px; position: absolute; right: 0px; top: 0px; opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "alpha(opacity=0)";
+-khtml-opacity: 0;
+-moz-opacity: 0;
+}
+.mypage-contents-item {padding-bottom: 20px; border-bottom: 1px dashed #fff;margin-bottom: 20px;}
+.mypage-contents-item-title {float: left; width: 200px; text-align: right; padding-right: 40px;}
+.mypage-contents-item-input {width: 100%;}

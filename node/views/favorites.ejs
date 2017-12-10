@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<% include ./common/common_head %>
+	<% include ./common/hidden %>
+		<body>
+			<% include ./common/header %>
+				<div class="container">
+				<% for(var i = 0; i < gab; i++){ %>
+					<div class="favoBox">
+					<em class="removeFavoriteItem" img src="../img/favorites-img/trash.png"></em>
+						<div class="favoTopBox" style="background-image: url(img/favorites-img/img01.jpg);">
+							<div class="favoCover"></div>
+							<div class="favoTopBox_align-left">
+								<div class="favo-title">리눅스와 github</div>
+								<div class="favo-tag">
+									<span class="last">#응용프로그래밍</span><br>
+									<span class="last">#웹프로그래밍</span><br>
+									<span class="last">#컴퓨터기타</span><br>
+								</div>
+							</div>
+						</div>
+						<div class="favoMid">
+							<img src="img/favorites-img/favo_man2.png">
+						</div>
+						<div class="favoBottom">
+							<div class="user-name">홍길동</div>
+							<div class="location">서울시 서초구 서초동</div>
+							<div class="strong-info">
+								<span class="payment">협의</span>
+								·
+								<span class="count">월 4회</span>
+							</div>
+							<div class="icon-container">
+								sss
+							</div>
+							
+						</div>
+					</div>
+					<% } %>
+				</div>
+				
+				
+		</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+    <% include ./common/common_head %>
+    <% include ./common/hidden %>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           var btnLen = $('.btn').children().length; 
+           $('.btn').css('width',((btnLen * 29) + 'px'));
+           $('.container2').find('.cont2b').eq(1).hide();
+           $('.container2').find('.cont2b').eq(2).hide();
+        });
+    </script>
+    <body>
+        <% include ./common/header %>
+        <!-- header 종료 -->
+        <div class="slider">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/main_slide1.png"></div>
+              <div class="swiper-slide"><img src="img/main_slide2.png"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <ul class="contain1">
+                    <h1>테마별 검색</h1>
+                    <% for(var i = 0; i < 6; i++){ %>
+                    <li><a href="#"><img src="img/contain1.jpg">
+                    <div class="cove1">#공방</div>
+                    </a></li>
+                    <% } %>
+                </ul>
+                <ul class="contain2">
+                    <h1>모꼬지 PICK</h1>
+                    <% for(var i = 0; i < 8; i++){ %>
+                    <li><a href="#">
+                        <div class="cont2t">
+                            <img src="img/contain2.jpg">
+                            <div class="cove2">베이킹 스튜디오 메닐몽땅</div>
+                        </div>
+                        <div class="saram">
+                            <img src="img/contain2_1_2.png">
+                        </div>
+                        <div class="con2b">
+                            <div class="name">오연주</div>
+                            <p>서울 송파구 잠실동</p>
+                            <span>협의 월1회</span>
+                        </div>
+                    </a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="wrapper">
+                <h1>모꼬지 MAGAZINE</h1>
+                <% for(var i = 0; i < 3; i++) { %>
+                <ul class="cont2b">
+                    <% for(var a = 0; a < 9; a++){ %>
+                    <li><a href="#">
+                        <img src="img/container2_1.jpg">
+                        <div class="cove3">
+                            <p>[가볼까]플라워 앙금 떡 케이크 클래스 <br>
+                            by.멍구</p>
+                        </div>
+                    </a></li>
+                    <% } %>
+                </ul>
+                <% } %>
+                <div class="cut"></div>
+                <button id="btn">더 불러오기</button>
+                <script type="text/javascript">
+                    var bsw = 1;
+                    var btnLen = $('.container2').find('.cont2b').length;
+                    $('#btn').click(function(){
+                        $('.container2').find('.cont2b').eq(bsw).show();
+                        bsw++;
+                        if(bsw == btnLen){
+                            $('#btn').hide();
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+        <% include ./common/footer %>
+        <script type="text/javascript">
+            var moccozy_js = {
+            init : function(){
+              var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                autoplay: {
+                  delay: 5000,
+                },
+                loop: true
+              });
+
+            },
+
+            modal_open : function(modal_name){
+              $("#"+modal_name).show();
+            },
+
+            modal_close : function(modal_name){
+              $("#"+modal_name).hide();
+                }
+            }
+
+            moccozy_js.init();
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

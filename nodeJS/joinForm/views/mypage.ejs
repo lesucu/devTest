@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<% include ./common_head %>
+<% include ./index_hidden %>
+<link rel="stylesheet" href="css/mypage.css" />
+<body>
+    <% include ./index_head %>
+        <!-- header 종료 -->
+        <div class="mypage-top">
+            <div class="mypage-container">
+                <div class="mypage-title">마이 페이지</div>
+                <div class="mypage-menu on">
+                    <a href="#">기본 정보</a>
+                </div>
+                <div class="mypage-menu">
+                    <a href="#">모꼬지 관리</a>
+                </div>
+            </div>
+        </div>
+        <div class="mypage-main">
+            <div class="mypage-contents">
+                <div class="mypage-tab">
+                    <div class="mypage-tab-item">프로필</div>
+                    <div class="mypage-tab-item">비밀번호 변경</div>
+                    <div class="mypage-tab-item">수신설정</div>
+                    <div class="mypage-tab-item">회원탈퇴</div>
+                </div>
+                <div class="mypage-contents-wrap">
+                    <div class="mypage-tab-title">프로필 사진</div>
+                    <div class="mypage-contents-body">
+                        <div class="mypage-profileImage">프로필이미지</div>
+                        <div class="mypage-profileExplain">
+                            <p>회원님의 정면 사진을 올려주세요!</p>
+                            <p>상대방이 신뢰를 갖고 연락 할 확률이 높아질 거예요.</p>
+                            <div class="profileFileUpload">
+                                <input type="button" value="사진 업로드 하기" class="file_input_button" />
+                                <input type="file" class="file_input_hidden" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mypage-tab-title">계정 정보</div>
+                    <div class="mypage-contents-body">
+                        <form>
+                            <div class="mypage-contents-item">
+                                <div class="mypage-contents-item-title">아이디</div>
+                                <div class="mypage-contents-item-input">아이디</div>
+                            </div>
+                            <div class="mypage-contents-item">
+                                <div class="mypage-contents-item-title">이름</div>
+                                <div class="mypage-contents-item-input">
+                                    <input type="text" value="testUser" />
+                                </div>
+                            </div>
+                            <div class="mypage-contents-item">
+                                <div class="mypage-contents-item-title">성별</div>
+                                <div class="mypage-contents-item-input">
+                                    <select>
+                                        <option value="">성별</option>
+                                        <option value="M">남자</option>
+                                        <option value="F">여자</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mypage-contents-item">
+                                <div class="mypage-contents-item-title">휴대폰번호</div>
+                                <div class="mypage-contents-item-input">010-4446-9378</div>
+                             </div>
+                             <div class="mypage-contents-item">
+                                <div class="mypage-contents-item-title">페이스북 개인페이지</div>
+                                <div class="mypage-contents-item-input">
+                                    <input type="text" placeholder="회원님의 페이스북 URL을 입력해주세요."></input>
+                                </div>
+                            </div>
+                            <div class="mypage-contents-item">
+                                <div class="mypage-contents-item-title">소개</div>
+                                <div class="mypage-contents-item-input">
+                                    <textarea placeholder="자유롭게 회원님을 소개해보세요."></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <% include ./index_tail %>
+</body>
+</html>

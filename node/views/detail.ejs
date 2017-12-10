@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <% include ./common/common_head %>
+    <% include ./common/hidden %>
+</head>
+<body>
+
+    <% include ./common/header %>
+    <!-- 임시 정보 -->
+    <% var tempDetailData =[
+        {title:'기본 정보',
+        items:
+            {
+                카테고리:'건강/웰빙, 피부관리, 뷰티/미용 기타',
+                비용:'₩ 70,000원',
+                횟수:'월 1 회',
+                수업경력:'10년 이상',
+                특기사항:'강사경험, 해외유학 경험, 현업 종사자'
+            }
+        },
+        {title:'추가 정보',
+        items:
+            {
+                목표:'건강·다이어트',
+                스타일:'자유분방, 기초다지기, 이해중심, 실습위주, 전문·심화',
+                대상:'대학생, 일반인, 직장인',
+                오리엔테이션:'불가능'
+            }
+        },
+       
+    ] %>
+    <div class="detailContainer">
+        <div class="titleImg">
+            <div class="title">
+                <div class="buttonContainer">
+                        <img class="buttonImg" src="img/icon/icon_heart_n.png">
+                        <img class="buttonImg" src="img/icon/icon_share_n.png">
+                        <img class="buttonImg" src="img/icon/icon_report_n.png">
+                </div>
+                <div class="categoryContainer">
+                        <div class="category">
+                            category1
+                        </div>
+                        <div class="category">
+                            category2
+                        </div>
+                        <div class="category">
+                            category3
+                        </div>
+                </div>
+                <div class="mainTitleContainer">
+                        mainTitle!!
+                </div>
+                <div class="creatorContainer">
+                    <div class="creator">
+                        <img class="creatorImg" src="img/contain2_1_2.png">
+                        <div class="creatorInfo"> 
+                            <p class="creatorName">이름</p>
+                            <p class="createDate">등록일 / 조회수</p>
+                        </div>
+                    </div>
+                    <div class="join">
+                        <button id="btn">
+                            신청하기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div>
+                <!-- 기본정보 , 추가정보 -->
+                <% for(var i = 0; i < tempDetailData.length; i++){ %>
+                    <h2 class="title">
+                        <%=tempDetailData[i].title%>
+                    </h2>
+                    <%for( var key in tempDetailData[i].items){%>
+                            <div style="display:flex">
+                                <p class="label"><%=key%></p>
+                                <p class="info"><%=tempDetailData[i].items[key]%></p>
+                            </div>
+                    <% } %>
+                <% } %>
+                
+            </div>
+            <div>
+                <h2 class="title">신청자 3</h2>
+                <div class="applicantContainer">
+                    <img class="applicantImg" src="img/contain2_1_2.png">
+                    <img class="applicantImg" src="img/contain2_1_2.png">
+                    <img class="applicantImg" src="img/contain2_1_2.png">
+                    <img class="applicantImg" src="img/contain2_1_2.png">
+                </div>
+
+            </div>
+            
+            <div>
+                <h2 class="title">모꼬지 소개</h2>
+                <pre class="Introduce">
+Q.수업에 어떤 분들이 참여하면 좋을까요?
+A. 대학새내기, 취업준비생, 직장인 등 평소에 메이크업에 관심은 많지만 본인에게 어울리는 화장법이 무엇인지 몰라 고민이던 분들에게 더이상 글이나 동영상이 아닌 맞춤강의로 장점은 극대화하고 단점은 커버하여 메이크UP! 하길 원하는 분들이라면 참여하세요
+
+Q.일정에 대해 알려주세요.(날짜, 시간, 소요시간, 횟수 등)
+A. 외부일정이 있기에 수강생과 스케줄 조율 후에 정확한 날짜는 정해집니다
+1회 수강기준 수강시간은 1시간반 입니다
+수업전 간단한 상담을 통해 수강생에게 필요로한 부분이 무엇인지 체크하고 수업횟수 및 방향이 결정됩니다
+최소 4회 수업을 권장하지만 개개인의 차이가 있기에 횟수는 줄어들수도 늘어날수도 있습니다
+원데이클래스로 3시간간의 커리큘럼도 있습니다
+
+Q.참여시 준비물이 필요한가요?
+A. 본인이 사용하는 메이크업 재료을 지참해도 되지만 작업실에 비치된 다양한 제품으로 사용가능합니다
+
+Q.참여하는 인원이 보통 몇 명인가요?
+A. 1:1 수업이 기본이나 친구와 함께 2:1 수업도 가능
+
+Q.결제는 어떤 방식으로 이루어지나요?
+A.  현장결제 또는 계좌이체
+수업료환불은 수업 7일전 100%환불
+3일전 50%환불, 1일 전 환불불가
+
+Q.수업 내용을 소개해주세요.(커리큘럼, 결과물 등)
+A. 
+1회차- 메이크업 고민 상담, 피부타입체크, 자신에게 맞는 베이스컬러 선택하기, 촉촉하고 지속력있는 베이스 메이크업
+2회차- 첫인상을 결정짓는 눈썹그리기, 얼굴을 또렷하고 작게만드는 윤곽메이크업, 아이메이크업의 기본
+3회차- 내 얼굴에 어울리는 메이크업 실전수업 및 평가
+4회차- 평소 관심있던 트렌드메이크업 실전수업 및 평가
+(상기 수업내용은 바뀔수 있습니다. 
+상황에 따라 수업은 회차가 줄어들수도 늘어날수도 있습니다. 
+수업하면서 수강생에게 어울리는 퍼스널컬러체크와 다채로운 메이크업제품 사용을 통해 제품사용에 대한 팁을 제공합니다)
+
+Q. 강사님을 소개해주세요.(이력, 자기소개 등)
+A. 미용예술학과 졸업후 토탈샵과 현장에서 일하며, 
+현재는 광고,화보,뷰티 촬영 메이크업 디렉팅 외에 
+역삼동 소재의 개인뷰티공방에서 웨딩, 연주, 면접 등의 헤어메이크업과 1:1메이크업 클래스를 운영하고 있습니다
+                </pre>
+            </div>
+
+            <div>
+                <h2 class="title">가능 시간</h2>
+                <div class="ableTime">
+                    <div class="ableTimeTableHeader" style="grid-column:1;grid-row:1;">월</div>
+                    <div class="ableTimeTableHeader" style="grid-column:2;grid-row:1;">화</div>
+                    <div class="ableTimeTableHeader" style="grid-column:3;grid-row:1;">수</div>
+                    <div class="ableTimeTableHeader" style="grid-column:4;grid-row:1">목</div>
+                    <div class="ableTimeTableHeader" style="grid-column:5;grid-row:1">금</div>
+                    <div class="ableTimeTableHeader" style="grid-column:6;grid-row:1">토</div>
+                    <div class="ableTimeTableHeader" style="grid-column:7;grid-row:1">일</div>
+               
+                    <div class="ableTimeTableInfo" style="grid-column:1;grid-row:2;">무관</div>
+                    <div class="ableTimeTableInfo" style="grid-column:2;grid-row:2;">무관</div>
+                    <div class="ableTimeTableInfo" style="grid-column:3;grid-row:2;">무관</div>
+                    <div class="ableTimeTableInfo" style="grid-column:4;grid-row:2;">무관</div>
+                    <div class="ableTimeTableInfo" style="grid-column:5;grid-row:2;">무관</div>
+                    <div class="ableTimeTableInfo" style="grid-column:6;grid-row:2;">무관</div>
+                    <div class="ableTimeTableInfo" style="grid-column:7;grid-row:2;">무관</div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="title">갤러리</h2>
+                <div class="galleryContainer">
+                    <a class="gallery">
+                        <img src="img/galleryImg.jpg"/>
+                        <div class="galleryHover">
+                            <img class="galleryHoverImg" src="img/icon/icon_zoom.png"/>
+                        </div>
+                    </a>
+                    <a class="gallery">
+                        <img src="img/galleryImg.jpg"/>
+                        <div class="galleryHover">
+                            <img class="galleryHoverImg" src="img/icon/icon_zoom.png"/>
+                        </div>
+                    </a>
+                    <a class="gallery">
+                        <img src="img/galleryImg.jpg"/>
+                        <div class="galleryHover">
+                            <img class="galleryHoverImg" src="img/icon/icon_zoom.png"/>
+                        </div>
+                    </a>
+                    <a class="gallery">
+                        <img src="img/galleryImg.jpg"/>
+                        <div class="galleryHover">
+                            <img class="galleryHoverImg" src="img/icon/icon_zoom.png"/>
+                        </div>
+                    </a>
+                    <a class="gallery">
+                        <img src="img/galleryImg.jpg"/>
+                        <div class="galleryHover">
+                            <img class="galleryHoverImg" src="img/icon/icon_zoom.png"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div>지도랑 기타등등</div>
+        </div>
+        <div class="comments">
+        <h2 class="title">덧글 0</h2>
+            <div class="commentContainer">
+                <textarea class="commentInput" row=3 placeholder="로그인을 하고 댓글을 작성 해보세요."></textarea>
+                <button class="commentButton" type="submit" >등록</button>            
+            </div>
+        </div>  
+
+    </div>
+    <% include ./common/footer %>
+    
+</body>
+</html>

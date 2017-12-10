@@ -1,0 +1,84 @@
+/*favorites*/
+.container {
+ 	width: 1140px; margin: 40px auto;
+}
+.container > .favoBox {width: 32%; height: 357px; box-shadow: 3px 3px 1px #ccc; float: left;
+margin: 7px; position: relative;}
+.container > .favoBox > .removeFavoriteItem {
+    margin: 7px 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 5px 8px 4px 7px;
+    border-radius: 1px;
+    position: absolute;
+    right: 19px;
+    top: 29px;
+    z-index: 900;
+    cursor: pointer;
+		
+}
+.container > .favoBox > .favoTopBox {width: 100%; height: 240px; background-size: cover; 
+	background-position: center;}
+.container > .favoBox > .favoTopBox > .favoTopBox_align-left {
+	text-align: left;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 100%;
+}
+.container > .favoBox > .favoTopBox > .favoTopBox_align-left > .favo-title {
+	font-size: 24px;
+	padding-top: 60px;
+	position: absolute;
+	color: antiquewhite;
+}
+.container > .favoBox > .favoTopBox > .favoTopBox_align-left > .favo-tag {
+	position: absolute;
+  top: 160px;
+  left: 26px;
+  height: 30%;
+	font-size: 15px;
+	color: antiquewhite;
+}
+.container > .favoBox > .favoTopBox > .favoCover {
+	position: absolute; width: 100%; height: 240px;
+	background: rgba(0,0,0,0.4); top: 0;
+}
+.container > .favoBox > .favoMid {width: 80px; height: 80px;
+border-radius: 100%; border: 3px solid #ccc; overflow: hidden;
+position: absolute; left: 249px; top: 197px;}
+.container > .favoBox > .favoMiddle > img {width: 100%; height: 100%;}
+
+.container > .favoBox > .favoBottom {
+	width: 100%;
+	background-color: #fff;
+	border-top: 1px solid #efefef;
+	color: #666;
+	height: 116px
+}
+.container > .favoBox > .favoBottom > .user-name {
+	padding-top: 7px;
+	padding-left: 192px;
+	font-size: 15px;
+}
+.container > .favoBox > .favoBottom > .location {
+	font-size: 16px;
+	text-align: left;
+	padding-left: 25px;
+  padding-right: 25px;
+	padding-top: 19px;
+}
+.container > .favoBox > .favoBottom > .strong-info {
+	font-size: 15px;
+  margin-top: 10px;
+  color: #00beff;
+	text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.container > .favoBox > .favoBottom > .icon-container {
+		position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
